@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+
+<body>
+    <script>
+        const hojas_libro = Number(prompt("Ingresa el número de hojas del libro"))
+        const copias = Number(prompt("Número total de copias del libro"))
+        let precio = 0
+        let cobrar = 0
+
+        if (copias < 50){
+            precio = 100
+        } else if ( copias >= 50  && copias <= 100){
+            precio = 80
+        } else if ( copias >= 101 && copias <= 200){
+            precio = 65
+        } else if ( copias >= 201){
+            precio = 65
+        }
+
+        cobrar = hojas_libro * copias * precio
+        alert("Son " + cobrar);
+    </script>
+</body>
+
+</html>

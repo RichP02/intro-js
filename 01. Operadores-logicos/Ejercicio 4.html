@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <script>
+        let calif1 = Number(prompt("Pimera calificacion"))
+        let calif2 = Number(prompt("Segunda calificacion"))
+        let calif3 = Number(prompt("Tercera calificacion"))
+
+        if (calif1 >= 0 && calif1 <= 5){
+            console.log("Dato valido")
+        } else {
+            calif1 = Number(prompt("Inserta un valor valido \n Pimera calificacion"))
+        }
+        if (calif2 >= 0 && calif2 <= 5){
+            console.log("Dato valido")
+        } else {
+            calif2 = Number(prompt("Inserta un valor valido \n Segunda calificacion"))
+        }
+        if (calif3 >= 0 && calif3 <= 5){
+            console.log("Dato valido")
+        } else {
+            calif3 = Number(prompt("Inserta un valor valido \n Tercera calificacion"))
+        }
+
+        const porcentaje1 = calif1 * .2
+        const porcentaje2 = calif2 * .3
+        const porcentaje3 = calif3 * .5
+
+        const suma = porcentaje1 + porcentaje2 + porcentaje3
+
+        if (suma > 3){
+            alert("Felicidades aprobaste, tu calificacion es de " + suma)
+        } else {
+            alert("Suerte la proxima vez, tu calificacion es de " + suma)
+        }
+    </script>
+</body>
+
+</html>

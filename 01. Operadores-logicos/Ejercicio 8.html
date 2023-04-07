@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+
+<body>
+    const pared = prompt("Esta lisa la pareded (si o no)")
+        const metro = Number(prompt("Metros cuadrados"))
+        let precio = 15000
+
+        if (pared === "si"){
+            precio = (metro * 2000) + precio
+        } else if (pared === "no"){
+            const emparejar = prompt("Quiere emparejar la pared(si o no)")
+            if (emparejar == "si"){
+                precio = (3000 * metro) + precio
+            } else if (emparejar == "no"){
+                precio = (800 * metro) + precio
+            }
+        }
+        alert("Lo que se debe pagar son:" + precio)
+</body>
+
+</html>

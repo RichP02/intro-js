@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+    <script>
+        let calif1 = Number(prompt("Pimera calificacion"))
+        let calif2 = Number(prompt("Segunda calificacion"))
+        let calif3 = Number(prompt("Tercera calificacion"))
+        let calif4 = Number(prompt("Cuarta calificacion"))
+        let calif5 = Number(prompt("Quinta calificacion"))
+        let precio = Number(prompt("Costo de la matricula"))
+
+        if (calif1 >= 0 && calif1 <= 5){
+            console.log("Dato valido")
+        } else {
+            calif1 = Number(prompt("Inserta un valor valido \nPimera calificacion"))
+        }
+        if (calif2 >= 0 && calif2 <= 5){
+            console.log("Dato valido")
+        } else {
+            calif2 = Number(prompt("Inserta un valor valido \nSegunda calificacion"))
+        }
+        if (calif3 >= 0 && calif3 <= 5){
+            console.log("Dato valido")
+        } else {
+            calif3 = Number(prompt("Inserta un valor valido \nTercera calificacion"))
+        }
+        if (calif4 >= 0 && calif4 <= 5){
+            console.log("Dato valido")
+        } else {
+            calif3 = Number(prompt("Inserta un valor valido \nCuarta calificacion"))
+        }
+        if (calif5 >= 0 && calif5 <= 5){
+            console.log("Dato valido")
+        } else {
+            calif5 = Number(prompt("Inserta un valor valido \nQuinta calificacion"))
+        }
+
+        const promedio = (calif1 + calif2 + calif3 + calif4 + calif5) / 5
+
+        if (promedio >= 4){
+            let descuento = precio * .25
+            let precio_final = precio - descuento
+            alert("Beca consedida, con una calificacion de " + promedio + "\nPrecio de la matricula " + precio + "\nPrecio de la matricula con beca " + precio_final)
+        } else {
+            alert("No se otorga beca, por una calificacion de " + promedio + "\nPrecio de la matricula sin beca " + precio)
+        }
+    </script>
+</body>
+
+</html>

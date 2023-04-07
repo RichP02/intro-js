@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="./css/style2.css">
+    <script type="module" src="./js/functionMaui.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="./index.html">
+            <button class="cerrar-sesion">Cerrar sesión</button>
+        </a>
+
+        <h2>Bienvenido al cajero automático</h2>
+
+        <div class="text-container">
+            <form class="button-wrapper">
+                <img src="./images/cartera.jpg" alt="Consultar el saldo que tiene">
+                <p>Consulta cuál es tu saldo</p>
+                <button id="saldo" class="funtion">Consultar saldo</button>
+            </form>
+
+            <form class="button-wrapper" id="Depositar">
+                <img src="./images/depositar.jpg" alt="Depositar dinero a su cuenta">
+                <p>Ingresa la cantidad que desea depositar</p>
+                <input name="canDespositar" data-type="currency" placeholder="$990.00">
+                <button class="funtion" id="btnDeposito">Ingresar dinero</button>
+            </form>
+
+            <form class="button-wrapper" id="Retirar"">
+                <img src="./images/retirar.jpg" alt="Retirar dinero de su cuenta">
+                <p>Ingresa la cantidad que desa retirar</p>
+                <input name="canRetirar" data-type="currency" placeholder="$990.00">
+                <button class="funtion" id="btnRetirar">Retirar dinero</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <script>
+        const total_credito_1 = Number(prompt("Credito del primer hijo"))
+        const total_credito_2 = Number(prompt("Credito del segundo hijo"))
+        const total_credito_3 = Number(prompt("Credito del tercer hijo"))
+        const total = (total_credito_1 + total_credito_2 + total_credito_3) * 180000
+
+        if (total > 7000000){
+            let porcentaje1 = total * .4
+            let porcentaje2 = total * .3
+            let porcentaje3 = total * .3
+            alert("Como pagarlo\nFamilia pondra pagar (40%) = "+porcentaje1+"\nPedir prestado al Icetex (30%) = "+porcentaje2+"\nBanco(30%) = "+porcentaje3)
+        } else if (total <= 7000000){
+            let porcentaje1 = total * .7
+            let porcentaje2 = total * .3
+            alert("Como pagarlo\nFamilia pondra dinero (70%) = "+porcentaje1+"\nCredito al Icetex (30%) = "+porcentaje2)
+            console.log(total);
+        }
+    </script>
+</body>
+
+</html>
